@@ -25,4 +25,17 @@ return [
     '@hotwired/turbo' => [
         'version' => '7.3.0',
     ],
+    '@symfony/ux-live-component' => [
+        'path' => './vendor/symfony/ux-live-component/assets/dist/live_controller.js',
+    ],
+    'bootstrap/dist/css/bootstrap.min.css' => [
+        'version' => '5.3.6',
+        'type' => 'css',
+    ],
+    'bootstrap' => [
+        'version' => '5.3.6',
+    ],
+    '@popperjs/core' => [
+        'version' => '2.11.8',
+    ],
 ];
