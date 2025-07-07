@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Origine du personnage
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+
+		<div id="origine">
+			<div class="row justify-content-around">
+
+				<div class="d-block col-3">
+					<strong>Vigueur :</strong>
+					{{ personnage.attributs.vigueur }}
+
+				</div>
+				<div class="d-block col-3">
+					<strong>Agilité :</strong>
+					{{ personnage.attributs.agilite }}
+
+				</div>
+				<div class="d-block col-3">
+					<strong>Esprit :</strong>
+					{{ personnage.attributs.esprit }}
+
+				</div>
+				<div class="d-block col-3">
+					<strong>Aura :</strong>
+					{{ personnage.attributs.aura }}
+
+				</div>
+			</div>
+
+			<div class="row justify-content-around">
+
+				<div class="d-block col-3">
+					<strong>Initiative :</strong>
+					{{ personnage.combat.initiative }}
+				</div>
+				<div class="d-block col-3">
+					<strong>Mêlée :</strong>
+					{{ personnage.combat.melee }}
+
+
+				</div>
+				<div class="d-block col-3">
+					<strong>Tir :</strong>
+					{{ personnage.combat.tir }}
+
+
+				</div>
+				<div class="d-block col-3">
+					<strong>Défense :</strong>
+					{{ personnage.combat.defense }}
+
+				</div>
+			</div>
+
+			<h3>Origine du personnage</h3>
+
+			{{ form(origineForm) }}
+
+			</div>
+
+		</div>
+
+
+	{% endblock %}

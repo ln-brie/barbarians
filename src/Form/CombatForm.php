@@ -2,7 +2,8 @@
 
 namespace App\Form;
 
-use App\Form\Model\Attributs;
+use App\Form\Model\Combat;
+use App\Form\Model\CustomFormData;
 use App\Validator\TotalEquals;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
@@ -10,31 +11,32 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class StatsForm extends AbstractType
+class CombatForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('vigueur', IntegerType::class, [
+            ->add('initiative', IntegerType::class, [
                 'attr' => [
                     'min' => 0,
                     'max' => 3
                 ]
             ])
-            ->add('agilite', IntegerType::class, [
-                'label' => 'Agilité',
+            ->add('melee', IntegerType::class, [
+                'label' => 'Mêlée',
                 'attr' => [
                     'min' => 0,
                     'max' => 3
                 ]
             ])
-            ->add('esprit', IntegerType::class, [
+            ->add('tir', IntegerType::class, [
                 'attr' => [
                     'min' => 0,
                     'max' => 3
                 ]
             ])
-            ->add('aura', IntegerType::class, [
+            ->add('defense', IntegerType::class, [
+                'label' => 'Défense',
                 'attr' => [
                     'min' => 0,
                     'max' => 3
@@ -49,8 +51,9 @@ class StatsForm extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'data_class' => Attributs::class,
-            'constraints' => [new TotalEquals(4)], 
+
+            'data_class' => Combat::class,
+            'constraints' => [new TotalEquals(4)],
         ]);
     }
 }

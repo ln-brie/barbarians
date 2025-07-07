@@ -2,40 +2,83 @@
 
 namespace App\Controller;
 
+use App\Form\CombatForm;
+use App\Form\Model\Attributs;
+use App\Form\Model\Combat;
+use App\Form\Model\CustomFormData;
+use App\Form\Model\Perso;
+use App\Form\OrigineForm;
 use App\Form\StatsForm;
+use phpDocumentor\Reflection\Types\This;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
-use Symfony\UX\Turbo\TurboBundle;
 
 final class FormController extends AbstractController
 {
-    #[Route('/form', name: 'form-stats')]
-    public function form_stats(Request $request): Response
+
+    public function __construct(private RequestStack $requestStack) {}
+
+
+    #[Route('/attributs', name: 'attributs-form')]
+    public function form_stats_attributs(Request $request): Response
     {
-        $form = $this->createForm(StatsForm::class);
+        $request->getSession()->start();
+
+        $personnage = new Perso;
+        $formDataAttributs = new Attributs;
+        $form = $this->createForm(StatsForm::class, $formDataAttributs);
 
         $form->handleRequest($request);
-        
+
         if ($form->isSubmitted() && $form->isValid()) {
-            $stats = $form->getData();
-            // ... perform some action, such as saving the task to the database
+            $personnage->attributs = $form->getData();
+            $request->getSession()->set('perso', $personnage);
 
-            // 🔥 The magic happens here! 🔥
-            if (TurboBundle::STREAM_FORMAT === $request->getPreferredFormat()) {
-                // If the request comes from Turbo, set the content type as text/vnd.turbo-stream.html and only send the HTML to update
-                $request->setRequestFormat(TurboBundle::STREAM_FORMAT);
-                return $this->renderBlock('form/index.html.twig', 'success_stream');
-            }
-
-            // If the client doesn't support JavaScript, or isn't using Turbo, the form still works as usual.
-            // Symfony UX Turbo is all about progressively enhancing your applications!
-            return $this->redirectToRoute('index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('combat_form');
         }
 
-        return $this->render('form/index.html.twig', [
+        return $this->render('form/attributs.html.twig', [
             'form' => $form,
         ]);
+    }
+
+    #[Route('combat', name: 'combat_form')]
+    public function generateCombatForm(Request $request)
+    {
+        $personnage = $request->getSession()->get('perso');
+
+        $formDataCombat = new Combat;
+        $combatForm = $this->createForm(CombatForm::class, $formDataCombat);
+        $combatForm->handleRequest($request);
+        if ($combatForm->isSubmitted() && $combatForm->isValid()) {
+            $personnage->combat = $combatForm->getData();
+            $request->getSession()->set('perso', $personnage);
+
+            return $this->redirectToRoute('origine_form');
+        }
+
+        return $this->render('form/combat.html.twig', ['attributs' => $personnage->attributs, 'combatForm' => $combatForm]);
+    }
+
+
+    #[Route('origine', name: 'origine_form')]
+    public function generateOrigineForm(Request $request)
+    {
+
+        $personnage = $request->getSession()->get('perso');
+
+        $origines = file_get_contents('../assets/files/origines.json');
+        $origines = json_decode($origines);
+        $origineForm = $this->createForm(OrigineForm::class, options: ['origines' => $origines]);
+        $origineForm->handleRequest($request);
+
+        if ($origineForm->isSubmitted() && $origineForm->isValid()) {
+            $personnage->origine = $origineForm->getData();
+            dd($personnage);
+        }
+        return $this->render('form/origine.html.twig', ['personnage' => $personnage, 'origineForm' => $origineForm]);
     }
 }

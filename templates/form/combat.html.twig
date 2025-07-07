@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Valeurs de combat
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+
+<div id="stats_combat">
+	<div class="row justify-content-around mb-3">
+
+		<div class="d-block col-3">
+			<strong>Vigueur :</strong>
+			{{ attributs.vigueur }}
+		</div>
+		<div class="d-block col-3">
+			<strong>Agilité :</strong>
+			{{ attributs.agilite }}
+
+		</div>
+		<div class="d-block col-3">
+			<strong>Esprit :</strong>
+			{{ attributs.esprit }}
+
+		</div>
+		<div class="d-block col-3">
+			<strong>Aura :</strong>
+			{{ attributs.aura }}
+
+		</div>
+	</div>
+
+	<h3>Aptitudes de combat</h3>
+	<p>Répartissez 4 points</p>
+
+	{{ form(combatForm) }}
+
+	</div>
+
+
+	{% endblock %}
+

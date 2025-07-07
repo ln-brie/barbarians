@@ -1,3 +1,156 @@
-{
-    
-}
+[
+    {
+        "lieu" : "Désert de Beshaar",
+        "avantages" : ["ami des bêtes", "arme favorite (javelot)", "attirant", "baudrier de guerre", "né en selle", "renard du désert", "vision nocturne", "vue perçante" ],
+        "desavantages" : ["bouseux", "chétif", "impétueux", "inadapté au froid", "marin d’eau douce", "signe distinctif", "taciturne"],
+        "noms" : {
+            "masculins" : ["Aban", "Akar", "Akon", "Atak", "Basit", "Boulos", "Darwish", "Fath", "Ferran", "Harith", "Jalid", "Karim", "Makil", "Mujib", "Nur", "Sadin", "Samad", "Surk", "Yazan"],
+            "feminins" : ["Alima", "Almas", "Ambre", "Bisara", "Dimah", "Felina", "Hilela", "Husina", "Isimi", "Jamara", "Judi", "Kalila", "Lula", "Maysam", "Mumi", "Namara", "Nuha", "Qisa", "Rua", "Thara"]
+        }
+    },
+    {
+        "lieu" : "Halakh",
+        "avantages" : ["arme favorite (kriss)", "discret", "montagnard", "outillage", "renard du désert", "résistant aux poisons", "vision nocturne"],
+        "desavantages" : ["addiction", "fanatique", "gars de la ville", "indigne de confiance", "marin d’eau douce"],
+        "noms" : {
+            "masculins" : ["Angada", "Balaram", "Bhadrakil", "Chalam", "Chedi", "Daruk", "Devad", "Drajit", "Govardan", "Iravan", "Janak", "Jiwal", "Karna", "Kichaka", "Kurava", "Maharak", "Mapoutra", "Parada", "Parasara", "Shoumat"],
+            "feminins" : ["Anjana", "Ardana", "Charla", "Damayanti", "Devaki", "Gadiva", "Hanala", "Holi", "Ilvala", "Jasura", "Kalindi", "Kesha", "Madri", "Mashini", "Nakula", "Nala", "Neta", "Ralekha", "Rasena", "Vahana"]
+        }
+    },
+    {
+        "lieu" : "Îles du Crâne",
+        "avantages" : ["amis dans la pègre", "athlète", "bagarreur", "discret", "doigts de fée", "fêtard", "gamin des rues", "pied marin", "récupération rapide", "roi de l’évasion", "vigilant", "vue perçante"],
+        "desavantages" : ["borgne / oreille coupée", "cupide", "fanfaron", "illettré", "indigne de confiance", "lubrique", "malédiction de Morgazzon", "manchot / unijambiste", "maudit", "phobie", "poltron", "signe distinctif", "soiffard", "traqué"],
+        "noms" : {
+            "masculins" : [],
+            "feminins" : []
+        }
+    },
+    {
+        "lieu" : "Shamballah ou Jungle de Qo et jungle de Qush",
+        "avantages" : [],
+        "desavantages" : [],
+        "noms" : {
+            "masculins" : [],
+            "feminins" : []
+        }
+    },
+    {
+        "lieu" : "Lysor",
+        "avantages" : ["amis haut placés", "artiste", "attirant", "bibliothèque savante", "érudit", "fortuné", "mains guérisseuses", "perspicace", "récupération rapide", "résistant aux poisons", "santé de fer", "savant"],
+        "desavantages" : ["chétif", "foie jaune", "gars de la ville", "incapable de mentir", "lent à la détente", "malédiction de Morgazzon", "non-combattant"],
+        "noms" : {
+            "masculins" : ["Aklaton", "Bardak", "Bazyli", "Creon", "Cyr", "Dramik", "Erechon", "Jenko", "Morgos", "Myron", "Otos", "Skorpos", "Vaston", "Zedek", "Zerro"],
+            "feminins" : ["Adara", "Alesta", "Cora", "Dresina", "Elma", "Furka", "Honna", "Irusina", "Jace", "Letha", "Megara", "Melika", "Nirla", "Timandra", "Uvikka", "Vara", "Zeva"]
+        }
+    },
+    {
+        "lieu" : "Malakut",
+        "avantages" : ["amis dans la pègre", "arme favorite (khastok)", "combat à l’aveugle", "discret", "doigts de fée", "fêtard", "fils des plaines", "gamin des rues", "outillage (outils de voleur)", "vigilant"],
+        "desavantages" : ["chétif", "gars de la ville", "indigne de confiance", "marin d’eau douce", "mauvaise réputation", "traqué"],
+        "noms" : {
+            "masculins" : ["Arfi", "Badar", "Crixas", "Darzi", "Erfan", "Firdos", "Gilki", "Jandak", "Krugar", "Lodar", "Midum", "Nakum", "Purdos", "Qalader", "Qatir", "Qorbi", "Ralak", "Sardan", "Tamar", "Zemar"],
+            "feminins" : ["Adala", "Azra", "Bursebala", "Coza", "Daliya", "Dua", "Ethibela", "Lamala", "Mirvala", "Norva", "Qisi", "Roshan", "Sakina", "Saran", "Simi", "Tala", "Tikina", "Wella", "Xua", "Zinah"]
+        }
+    },
+    {
+        "lieu" : "Marais de Festrel",
+        "avantages" : ["athlète", "bagarreur", "discret", "odorat développé", "ouïe fine", "pisteur des marais", "résistant aux poisons", "santé de fer", "vigilant"],
+        "desavantages" : ["bouseux", "illettré", "inadapté à la chaleur", "maudit", "taciturne"],
+        "noms" : {
+            "masculins" : [],
+            "feminins" : []
+        }
+    },
+    {
+        "lieu" : "Marais de Kasht",
+        "avantages" : ["ami des bêtes", "athlète", "discret", "odorat développé", "ouïe fine", "pisteur des marais", "résistant aux poisons", "santé de fer", "vigilant"],
+        "desavantages" : ["bouseux", "chétif", "crédule"],
+        "noms" : {
+            "masculins" : ["Achak", "Ahmik", "Akando", "Akule", "Ashok", "Bidi", "Chepi", "Chetan", "Ciqala", "Dogon", "Goth", "Hinto", "Hokee", "Jolon", "Keme", "Knoton", "Kourouk", "Molimo", "T’kala", "T’kouna"],
+            "feminins" : ["Aiyana", "Alawa", "Atiaran", "Bly", "Camarin", "Cathecassa", "Chapala", "Chimalis", "Dena", "Doli", "Donoma", "Etania", "Kalama", "Landina", "Mitenah", "Nitika", "Onatah", "Orenda", "Z’kala", "Z’kouna"]
+        }
+    },
+    {
+        "lieu" : "Montagnes de l’Axos",
+        "avantages" : ["arme favorite (fronde de l’Axos)", "athlète", "colosse", "cri de guerre", "dur à cuire", "montagnard", "odorat développé", "ouïe fine", "récupération rapide", "santé de fer", "vigilant"],
+        "desavantages" : ["bouseux", "illettré", "inadapté à la chaleur", "marin d’eau douce", "méfiance envers la sorcellerie", "taciturne"],
+        "noms" : {
+            "masculins" : ["Almod", "Amerik", "Borc", "Drogar", "Erkil", "Fiak", "Finvar", "Ginnar", "Hakon", "Krakar", "Oslac", "Rokar", "Salgarth", "Sungar", "Thork", "Thurkil", "Travik", "Vali", "Vikar", "Vogg"],
+            "feminins" : ["Arlin", "Asta", "Birla", "Dalla", "Emelle", "Esja", "Evenni", "Finna", "Forla", "Froda", "Gevi", "Glevara", "Herdis", "Jodis", "Jofa", "Klima", "Runa", "Rym", "Sivora", "Varda"]
+        }
+    },
+    {
+        "lieu" : "Oomis",
+        "avantages" : ["ami des céruléens", "dur à cuire", "fortuné", "perspicace"],
+        "desavantages" : ["cupide", "dur d’oreille", "lent à la détente", "malédiction de Morgazzon"],
+        "noms" : {
+            "masculins" : ["Aceld", "Algeros", "Curcio", "Dalmar", "Deston", "Kaarlo", "Norf", "Quent", "Rust", "Sevrik", "Vardon", "Vik"],
+            "feminins" : ["Afrodille", "Alix", "Daisi", "Dany", "Delit", "Jance", "Jenina", "Jessamin", "Miette", "Myrla", "Questa"]
+        }
+    },
+    {
+        "lieu" : "Parsool",
+        "avantages" : ["arme favorite (hache d’abordage de Parsool)", "cri de guerre (Parsool)", "fêtard", "pied marin"],
+        "desavantages" : ["borgne/oreille coupée", "gars de la ville", "illettré", "manchot/unijambiste", "soiffard"],
+        "noms" : {
+            "masculins" : ["Agroc", "Bardhyl", "Besmir", "Dar", "Driton", "Erion", "Jaak", "Jeton", "Jodoc", "Juhan", "Kalev", "Koit", "Lek", "Loic", "Nighul", "Paol", "Pavo", "Ropar", "Skender", "Toomaas"],
+            "feminins" : ["Arvesa", "Besa", "Bora", "Dritta", "Eha", "Genta", "Kaias", "Kaja", "Leka", "Liridona", "Loviise", "Marika", "Mimiza", "Mirjam", "Reet", "Riina", "Rovena", "Tuule", "Viu", "Zami"]
+        }
+    },
+    {
+        "lieu" : "Satarla",
+        "avantages" : ["amis haut placés", "artiste", "bibliothèque savante", "bien né", "érudit", "fortuné", "marqué par les dieux", "né en selle", "savant"],
+        "desavantages" : ["arrogant", "cupide", "gars de la ville"],
+        "noms" : {
+            "masculins" : ["Alban", "Avitus", "Blasius", "Brutor", "Cassian", "Corvin", "Crisus", "Drusus", "Emilian", "Festus", "Gallus", "Gord", "Hilaro", "Hort", "Juven", "Luman", "Martis", "Nonus", "Petron", "Regul", "Rufin", "Sabin", "Severan", "Terent", "Torc", "Vitan"],
+            "feminins" : ["Amilia", "Arlana", "Cassi", "Cloel", "Domitia", "Fabula", "Floriana", "Gemellia", "Junia", "Laela", "Laurenia", "Manda", "Marina", "Nunia", "Quina", "Severina", "Tullia", "Valeria", "Varinia", "Vita"]
+        }
+    },
+    {
+        "lieu" : "Shamballah",
+        "avantages" : ["ami des bêtes", "athlète", "odorat développé", "ouïe fine", "roi de la jungle", "vigilant", "vue perçante"],
+        "desavantages" : ["bouseux", "illettré", "inadapté au froid", "marin d’eau douce", "méfiance envers la sorcellerie"],
+        "noms" : {
+            "masculins" : ["Akri", "Badran", "Bello", "Diallo", "Donkor", "Eze", "Jaafar", "Juma", "Kamouzou", "M’Boutou", "M’Dogo", "Nasso", "Ohin", "Oulan", "Rasoul", "Simballa", "Talib", "Watimou", "Zareb", "Zouri"],
+            "feminins" : ["Afi", "Bembel", "Binta", "Chipi", "Damisi", "Dayo", "Elomi", "Geli", "Habika", "Jahia", "Lila", "M’Lala", "Panya", "Sabra", "Shani", "Tabita", "Tisha", "Yousra", "Zalika", "Zina"]
+        }
+    },
+    {
+        "lieu" : "Tyrus",
+        "avantages" : ["arme favorite (arc long de Tyrus)", "bagarreur", "cri de guerre (Tyrus)", "fêtard", "résistant à la magie", "roi de la jungle", "sentir la magie", "vigilant"],
+        "desavantages" : ["fanfaron", "gars de la ville", "illettré", "méfiance envers la sorcellerie", "soiffard"],
+        "noms" : {
+            "masculins" : ["Anxo", "Baldo", "Bartol", "Bento", "Dimas", "Eloy", "Ericos", "Gaspar", "Helder", "Jorg", "Mogos", "Nuno", "Ovanto", "Pluco", "Qido", "Raul", "Rui", "Tacito", "Thiago", "Valen"],
+            "feminins" : ["Ana", "Branca", "Carmo", "Desideria", "Dorotana", "Jovita", "Judita", "Kardelia", "Lia", "Lotia", "Lygia", "Miella", "Nona", "Rebeqa", "Sabella", "Tuvia", "Uxia", "Xania", "Xoanna", "Zeta"]
+        }
+    },
+    {
+        "lieu" : "Urceb",
+        "avantages" : ["amis dans la pègre", "amis haut placés", "combat à l’aveugle", "fêtard", "outillage", "roi de l’évasion", "vision nocturne"],
+        "desavantages" : ["gars de la ville", "illettré", "taciturne"],
+        "noms" : {
+            "masculins" : ["Ambros", "Axel", "Bodo", "Curd", "Dolf", "Egond", "Falkor", "Golo", "Hegbran", "Jonar", "Kurnvarn", "Londar", "Lothar", "Mennus", "Rudig", "Sepp", "Till", "Torsten", "Urs", "Volkard"],
+            "feminins" : ["Alhella", "Barbella", "Crika", "Dorlina", "Erna", "Frekka", "Gusala", "Hannelor", "Jolanda", "Karolinda", "Letta", "Lieselotte", "Margita", "Nadja", "Pia", "Resi", "Seffi", "Theda", "Ursa", "Uta"]
+        }
+    },
+    {
+        "lieu" : "Valgard",
+        "avantages" : ["arme favorite (épée valgardienne)", "cri de guerre (Valgard)", "marqué par les dieux", "odorat développé", "récupération rapide", "tigre des neiges"],
+        "desavantages" : ["bouseux", "illettré", "inadapté à la chaleur", "incapable de mentir", "marin d’eau douce", "méfiance envers la sorcellerie", "taciturne"],
+        "noms" : {
+            "masculins" : ["Abrak", "Ankar", "Asvith", "Banfar", "Borkar", "Broti", "Craigor", "Drakkar", "Elkor", "Fingor", "Gonnar", "Grimar", "Hevik", "Jark", "Korik", "Krok", "Morkrar", "Rokor", "Thagric", "Voldar"],
+            "feminins" : ["Adisa", "Alvora", "Asara", "Berna", "Brongara", "Disa", "Edarra", "Erindis", "Finnara", "Fraorka", "Gyllana", "Hakatla", "Helvera", "Jarngera", "Jodis", "Jolinn", "Kitta", "Marfora", "Rakela", "Sesilida"]
+        }
+    },
+    {
+        "lieu" : "Zalut",
+        "avantages" : ["érudit", "intimidant", "magie des Rois-Sorciers", "pouvoir du Néant", "résistant à la magie", "résistant aux poisons", "savant", "sentir la magie", "vision nocturne"],
+        "desavantages" : ["addiction", "arrogant", "chétif", "foie jaune", "indigne de confiance", "inquiétant", "malédiction de Morgazzon", "maudit", "obsession", "poltron", "signe distinctif", "souffreteux"],
+        "noms" : {
+            "masculins" : ["Ariistuzuun", "Ar’siuqqu", "Balathu", "Bashaa", "Dadanuum", "Hunzuu", "Ikuppi", "Libulluth", "Nigsummu", "Nikannuur", "NurYunna", "Nutesh", "Puzzur", "Rihaatu", "Sargon", "Suusaandar", "Tattaanu", "Yamazuubaar", "Zorgal", "Zuuthusu"],
+            "feminins" : ["Amatia", "Ashlultum", "Banuna", "Gemeti", "Iltani", "Ishtaya", "Jaarthula", "Kishu", "Ku-Aya", "Nidintu", "Numunia", "Nuteshi", "Sillashu", "Sumia", "Thuulia", "Yadidatum", "Zadia", "Zakiti", "Zemibi", "Zorkara"]
+        }
+    }
+ 
+]
